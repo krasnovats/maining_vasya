@@ -713,22 +713,6 @@ video {
   animation: bounce 1s infinite;
 }
 
-@keyframes fade-in-right-rotate {
-  0% {
-    opacity: 0;
-    transform: translateX(-2000px) rotate(0deg);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px) rotate(720deg);
-  }
-}
-
-.animate-fadeinright {
-  animation: fade-in-right-rotate 3s ease-in-out 3s 1;
-}
-
 @keyframes fade-in-right {
   0% {
     opacity: 0;
@@ -786,6 +770,11 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -799,16 +788,6 @@ video {
 .bg-gray-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(3 7 18 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -878,6 +857,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .shadow-md {
@@ -1012,6 +995,58 @@ p {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 1;
     border-radius: 99999%;
+  }
+}
+
+#typing-text {
+  border-right: 2px solid;
+  /* Эффект курсора */
+  white-space: nowrap;
+  /* Не переносить текст */
+  width: 0;
+  /* Начальная ширина */
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+}
+
+.monet-animation {
+  animation: monet_move 2s ease-in-out forwards;
+  /* 2s — продолжительность анимации */
+  animation-delay: 8s;
+  /* Задержка перед началом анимации (например, 1 секунда) */
+}
+
+@keyframes monet_move {
+  0% {
+    transform: translateX(-1000px) rotate(-720deg);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+    /* Или установите значение, которое вам нужно */
+    border-radius: 0;
+    /* Если необходимо */
   }
 }
 
