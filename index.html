@@ -10,9 +10,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Unbounded:wght@200..900&display=swap"
-    rel="stylesheet">
-  <title>Главная страница</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+  <title>МайнингКлуб</title>
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/style.css">
@@ -20,80 +19,102 @@
 
 <body>
     <header class="bg-gray-950">
-        <div class="flex justify-between items-center p-4">
-            <div class="text-xl font-bold">
-                <a href="#"><img class="h-9 w-auto" src="/img/logo.svg" alt=""></a>
-            </div>
-            <button id="menu-toggle" class="md:hidden focus:outline-none cursor-pointer">
-                <p>---</p>
-            </button>
+        <div class="flex flex-col md:flex-row md:justify-between items-center px-4 py-4 md:py-8">
+
+            <div class="flex flex-row items-center justify-between w-full md:w-auto">
+                <div class="text-xl font-bold">
+                    <a href="#"><img class="h-[30px] w-[129px]" src="/img/logo.svg" alt=""></a>
+                </div>
+                <button class="w-1 flex md:hidden flex-col items-center gap-y-1" id="menu-toggle">
+                    <span class="w-full h-1 bg-white rounded-full"></span>
+                    <span class="w-full h-1 bg-white rounded-full"></span>
+                    <span class="w-full h-1 bg-white rounded-full"></span>
+                </button>
+
+            </div>    
+
             <nav id="menu" class="hidden md:flex space-x-8">
-                <a href="#" class="text-white hover:text-gray-400">Главная</a>
-                <a href="#" class="text-white hover:text-gray-400">О нас</a>
-                <a href="#" class="text-white hover:text-gray-400">Услуги</a>
-                <a href="#" class="text-white hover:text-gray-400">Контакты</a>
+                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">о нас</a>
+                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">о майнинге</a>
+                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">реквизиты</a>
+                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">контакты</a>
+            </nav>
+
+       
+            
+        <div class="md:flex flex-row gap-3 hidden">
+            <a href="" class="text-white hover:text-hoverColor font-bold mr-4 text-sm">+7 981 897-89-89</a>
+            <a href="">
+                <svg class="hover:text-hoverColor text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 0a12 12 0 1 1 0 24 12 12 0 0 1 0-24zm.14 4.5a7.34 7.34 0 0 0-6.46 10.82l.15.26L4.5 19.5l4.08-1.3a7.38 7.38 0 0 0 10.92-6.4c0-4.03-3.3-7.3-7.36-7.3zm0 1.16c3.41 0 6.19 2.76 6.19 6.15a6.17 6.17 0 0 1-9.37 5.27l-.23-.15-2.38.76.77-2.28a6.08 6.08 0 0 1-1.17-3.6 6.17 6.17 0 0 1 6.19-6.15zM9.66 8.47a.67.67 0 0 0-.48.23l-.14.15c-.2.23-.5.65-.5 1.34 0 .72.43 1.41.64 1.71l.14.2a7.26 7.26 0 0 0 3.04 2.65l.4.14c1.44.54 1.47.33 1.77.3.33-.03 1.07-.43 1.22-.85.15-.42.15-.78.1-.85-.02-.05-.08-.08-.15-.12l-1.12-.54a5.15 5.15 0 0 0-.3-.13c-.17-.06-.3-.1-.41.09-.12.18-.47.58-.57.7-.1.1-.18.13-.32.08l-.4-.18a4.64 4.64 0 0 1-2.13-1.98c-.1-.18-.01-.28.08-.37l.27-.31c.1-.1.12-.18.18-.3a.3.3 0 0 0 .01-.26l-.1-.23-.48-1.15c-.15-.36-.3-.3-.4-.3l-.35-.02z"/>
+                </svg>
+            </a>
+            <a href="">
+                
+                    <svg class="hover:text-hoverColor text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg>
+            </a>
+        </div>
+
+        </div>
+
+        <div id="mobile-menu" class="block md:hidden">
+            <nav class="flex flex-col space-y-4 p-4 bg-black border-t border-gray-200">
+                <a href="#" class="text-white hover:text-hoverColor uppercase">о нас</a>
+                <a href="#" class="text-white hover:text-hoverColor uppercase">о майнинге</a>
+                <a href="#" class="text-white hover:text-hoverColor uppercase">реквизиты</a>
+                <a href="#" class="text-white hover:text-hoverColor uppercase">контакты</a>
             </nav>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden">
-            <nav class="flex flex-col space-y-2 p-4 bg-black border-t border-gray-200">
-                <a href="#" class="text-white hover:text-gray-400">Главная</a>
-                <a href="#" class="text-white hover:text-gray-400">О нас</a>
-                <a href="#" class="text-white hover:text-gray-400">Услуги</a>
-                <a href="#" class="text-white hover:text-gray-400">Контакты</a>
-            </nav>
-        </div>
+
     </header>
     
 
     <main>
-        <section class="main-banner">
-            <div class="absolute top-1/2 -translate-y-1/2  w-full z-20 text-white">
-                <div class="relative container mx-auto">
-        
-                        <div class="flex items-center">
-                            <div class="mb-6">
-                                <div class="flex items-center">
-                                    <div class="animate-fadeinright222">
-                                        <h1 class="text-6xl leading-none">Mining</h1>
-                                        <h1 class="text-[180px] uppercase font-black leading-none">CLUB</h1>
-                                        <p id="typing-text" class="text-xl mt-2 "></p>
-                                    </div>
-                                    
-                                    <div class="w-[300px] h-[300px] monet-animation delay-100 -ml-[220px] mt-8 opacity-0"><img class="" src="./img/monet.png" alt=""></div>
-        
-                                </div>
-        
-                            </div>
-                            <div class="ml-60">
-                                <button class="hover:border-white hover:border-2 hover:bg-transparent hover:text-white rounded-full px-10 py-6 shadow-md bg-gray-100 text-black uppercase animate-bounce mt-6 text-base">
-                                    Начать
-                                </button>
-                            </div>
+        <section class="main-banner bg-bgDark relative">
+            <div class="container mx-auto text-white py-mobileBig md:py-big px-4">
+              
+                    <div class="relative inline-block">
+                        <h2 class="text-2xl sm:text-[45px] lg:text-[90px] font-sans z-10 relative sm:leading-[4rem]">Mining</h2>
+                        <div class="relative">
+                            <h1 class="text-7xl sm:text-[120px] lg:text-[242px] font-extrabold font-sans tracking-widest leading-[5rem] sm:leading-[5.5rem] lg:leading-[15.5rem] sm:mb-4 z-10 relative">CLU</h1>
+                            <img class="w-36 sm:w-[220px] lg:w-[374px] h-auto absolute -top-8 -right-16 sm:-top-16 sm:-right-1/2 lg:-top-1/4 lg:-right-1/2 z-0 text-white " src="./img/monet.png" alt="">
                         </div>
-        
+
+
+
+                        <h3 class="text-sm xl:text-xl lg:text-2xl font-sans z-10 relative w-1/2 sm:w-full">зарабатывайте вместе с нами</h3>
+
+                        <button class="border-white hover:border-hoverColor border-2 hover:bg-hoverColor hover:text-black rounded-full text-xs px-6 py-3 lg:px-10 lg:py-6 bg-transparent text-white font-sans uppercase mt-5 lg:mt-10 lg:text-base tracking-widest z-10 relative">
+                            вступить в клуб
+                        </button>
+                       
+                    </div>
+            </div>
+            <img class="absolute h-[250px] sm:h-[550px] xl:h-[790px] w-auto right-0 top-72 md:top-1/2 xl:top-1/4" src="./img/money-main.png" alt="">
+        </section>
+
+
+        <section class="bg-black">
+            <div class="container mx-auto py-mobileBig md:py-big px-4 flex flex-col lg:flex-row justify-between">
+
+                <div class="border-r-2 border-white mx-auto flex items-center">
+                    <p class="text-white text-2xl font-bold">от</p>
+                    <p class="text-[145px] font-bold">40</p>
+                    <div>
+                        <p class="text-[80px] font-bold">%</p>
+                        <p class="text-2xl font-bold">годовых</p>
+                    </div>
                 </div>
-        
-            </div>
-                <div class="area bg-gradient-to-b from-gray-950 to bg-gray-800">
-                            <ul class="circles">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                            </ul>
-                </div >
-        </section>
-        <img class="absolute top-1/2 right-0" src="/img/money-main.png" alt="">
-        <section>
-            <div class="h-[3800px] w-full">
+
+                <div class="mx-auto">
+                    <p>выплаты</p>
+                    <p>каждый месяц</p>
+                </div>
+
             </div>
         </section>
+
+
     </main>
 
 

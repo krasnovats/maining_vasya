@@ -7,15 +7,9 @@ module.exports = {
     extend: {
       colors: {
         mainColor: '#005BA9',
-        mainBlueColor: '#022B87',        
-        blueDark: '#001A59',
-        hoverColor: '#044CFF',
-        lightBlue: '#E1EAFD',
-        viaColor: '#032A8A',
-        bgDark: '#032B8F',
-        activeRed: '#EA0029',
-        grayMy: '#88898A',
-        whiteTrans: '#FFFFFF95',
+        hoverColor: '#DBCE88',
+        bgDark: '#131619',
+        
       },
 
       backgroundImage: {
@@ -23,8 +17,7 @@ module.exports = {
       },
 
       fontFamily: {
-        'sans': ['"Unbounded", sans-serif'],
-        'body':  ['"Inter", sans-serif'],
+        'sans': ['"Geologica", sans-serif'],
       },
 
       keyframes: {
@@ -96,19 +89,13 @@ module.exports = {
       }, 
 
       padding: {
-        big: '200px',
-        med: '120px',
-        topping: '100px',
-        title: '90px',
-        footer: '80px',
-        middle: '70px',
-        mobileMed: '50px',
-        mobileTitle: '40px',
-        list: '20px',
+        big: '150px',
+        mobileBig: '100px',
       },
      
       screens: {
-        sm: '340px',
+        xs: '340px',
+        sm: '500px',
         md: '768px',
         lg: '1024px',
         xl: '1280px',

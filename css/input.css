@@ -4,29 +4,35 @@
 
 @layer base {
   @font-face {
-    font-family: "Unbounded-Black";
+    font-family: "Geologica-Black";
     font-weight: 900;
-    src: url(/fonts/Unbounded-Black.woff2) format(woff2),
-      url(/fonts/Unbounded-Black.woff) format(woff);
+    src: url(/fonts/Geologica-Black.woff2) format(woff2),
+      url(/fonts/Geologica-Black.woff) format(woff);
   }
   @font-face {
-    font-family: "Unbounded-SemiBold";
-    font-weight: 600;
-    src: url(/fonts/Unbounded-SemiBold.woff2) format(woff2),
-      url(/Unbounded-SemiBold.woff) format(woff);
+    font-family: "Geologica-ExtraBold";
+    font-weight: 800;
+    src: url(/fonts/Geologica-ExtraBold.woff2) format(woff2),
+      url(/fonts/Geologica-ExtraBold.woff) format(woff);
   }
   @font-face {
-    font-family: "Unbounded-Regular";
+    font-family: "Geologica-SemiBold";
     font-weight: 600;
-    src: url(/fonts/Unbounded-Regular.woff2) format(woff2),
-      url(/Unbounded-Regular.woff) format(woff);
+    src: url(/fonts/Geologica-SemiBold.woff2) format(woff2),
+      url(/Geologica-SemiBold.woff) format(woff);
+  }
+  @font-face {
+    font-family: "Geologica-Regular";
+    font-weight: 400;
+    src: url(/fonts/Geologica-Regular.woff2) format(woff2),
+      url(/Geologica-Regular.woff) format(woff);
   }
 }
 
 
 
 body{
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Geologica', sans-serif;
 }
 
 
