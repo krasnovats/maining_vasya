@@ -34,10 +34,10 @@
             </div>    
 
             <nav id="menu" class="hidden md:flex space-x-8">
-                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">о нас</a>
-                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">о майнинге</a>
-                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">реквизиты</a>
-                <a href="#" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">контакты</a>
+                <a href="#about" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">о нас</a>
+                <a href="#maining" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">о майнинге</a>
+                <a href="#rekvizitu" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">реквизиты</a>
+                <a href="#contacts" class="text-white text-xs tracking-widest font-semibold hover:text-hoverColor uppercase">контакты</a>
             </nav>
 
        
@@ -59,10 +59,10 @@
 
         <div id="mobile-menu" class="block md:hidden">
             <nav class="flex flex-col space-y-4 p-4 bg-black border-t border-gray-200">
-                <a href="#" class="text-white hover:text-hoverColor uppercase">о нас</a>
-                <a href="#" class="text-white hover:text-hoverColor uppercase">о майнинге</a>
-                <a href="#" class="text-white hover:text-hoverColor uppercase">реквизиты</a>
-                <a href="#" class="text-white hover:text-hoverColor uppercase">контакты</a>
+                <a href="#about" class="text-white hover:text-hoverColor uppercase">о нас</a>
+                <a href="#maining" class="text-white hover:text-hoverColor uppercase">о майнинге</a>
+                <a href="#rekvizitu" class="text-white hover:text-hoverColor uppercase">реквизиты</a>
+                <a href="#contacts" class="text-white hover:text-hoverColor uppercase">контакты</a>
             </nav>
         </div>
 
@@ -71,7 +71,7 @@
 
     <main>
         <section class="main-banner bg-bgDark relative">
-            <div class="container mx-auto text-white py-mobileBig md:py-big px-4">
+            <div class="container mx-auto text-white py-mobileBig lg:py-big px-4">
               
                     <div class="relative inline-block">
                         <h2 class="text-2xl sm:text-[45px] lg:text-[90px] font-sans z-10 relative sm:leading-[4rem]">Mining</h2>
@@ -90,31 +90,205 @@
                        
                     </div>
             </div>
-            <img class="absolute h-[250px] sm:h-[550px] xl:h-[790px] w-auto right-0 top-72 md:top-1/2 xl:top-1/4" src="./img/money-main.png" alt="">
+            <img class="absolute h-[250px] md:h-[500px] xl:h-[790px] w-auto right-0 top-64 md:top-[150px] lg:top-[390px] xl:top-[100px]" src="./img/money-main.png" alt="">
         </section>
 
 
         <section class="bg-black">
-            <div class="container mx-auto py-mobileBig md:py-big px-4 flex flex-col lg:flex-row justify-between">
-
-                <div class="border-r-2 border-white mx-auto flex items-center">
-                    <p class="text-white text-2xl font-bold">от</p>
-                    <p class="text-[145px] font-bold">40</p>
-                    <div>
-                        <p class="text-[80px] font-bold">%</p>
-                        <p class="text-2xl font-bold">годовых</p>
+            <div class="container mx-auto py-mobileBig lg:py-big px-4 flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 items-center">
+                    <div class="mx-auto z-20">
+                        <img class="h-16 lg:h-24 w-auto" src="/img/40.png" alt="">
                     </div>
-                </div>
 
-                <div class="mx-auto">
-                    <p>выплаты</p>
-                    <p>каждый месяц</p>
-                </div>
+                    <span class="h-0.5 w-40 mx-auto lg:h-24 lg:w-0.5 bg-white"></span>
 
+                    <div class="mx-auto z-20">
+                        <img class="h-16 lg:h-24 w-auto" src="/img/vuplatu.png" alt="">
+                    </div>
             </div>
         </section>
 
 
+        <section id="about"  class="bg-bgDark relative lg:pb-16">
+            <img class="absolute h-[150px] md:h-[350px] xl:h-[500px] -top-16 md:-top-32 right-0 lg:right-20" src="./img/mini_money.png" alt="">
+            <div class="container mx-auto px-4 text-white py-mobileBig lg:py-big">
+
+            <div class="pb-mobileMed lg:pb-med">
+                <h2 class="text-2xl lg:text-4xl mb-6 lg:mb-10 uppercase">откуда такие Проценты?</h2>
+                <p class="text-xs lg:text-base w-full md:w-2/3">Если зайти на сайт <a target="_blank" class="underline hover:text-hoverColor" href="http://www.hashrate.no">www.hashrate.no</a> и ввести среднюю стоимость электроэнергии в России, а также цены за кВт/ч, мы увидим, что при текущей стоимости биткойна (BTC) окупаемость составляет 317 дней. Это примерно 110% годовых. При росте цены BTC ваш доход также будет увеличиваться. Инвестирование в майнинг является более надёжным вариантом, так как вы вкладываетесь в оборудование, а не только в криптовалюту.</p>
+            </div>
+           
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-10">
+    
+                <img class="object-cover h-[300px] w-full lg:w-[calc(50%-90px)]" src="./img/vid_1.png" alt="">
+            
+                <div class="h-0.5 w-40 lg:h-[300px] lg:w-0.5 mx-auto bg-white"></div>
+            
+                <img class="object-cover h-[300px] w-full lg:w-[calc(50%-90px)]" src="./img/vid_2.png" alt="">
+            
+            </div>
+           
+        </div>
+
+        </section>    
+
+
+
+        <section id="maining" class="bg-black relative xl:-mb-40">           
+            <div class="container mx-auto px-4 text-white pt-mobileBig lg:pt-big lg:pb-big">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="mr-20 order-2 sm:order-1">
+                    <img class="object-cover xl:h-[624px] w-auto xl:-mt-64" src="./img/a_realistic_beetcoin.png" alt="">
+                </div>
+                <div class="pb-mobileMed lg:pb-med order-1 sm:order-2">
+                    <h2 class="text-2xl lg:text-4xl mb-6 lg:mb-10 uppercase">Почему майнинг?</h2>
+                    <p class="text-xs lg:text-base w-full md:w-2/3">Он предоставляет уникальные преимущества: стабильный доход, возможность диверсификации ваших инвестиций и участие в децентрализованных финансах. С каждым днём все больше людей выбирают этот путь, чтобы обеспечить своё финансовое будущее.</p>
+                </div>             
+            </div>       
+            </div>
+        </section>    
+
+        <section class="bg-bgDark relative">           
+            <div class="container mx-auto px-4 text-white pt-mobileBig pb-mobileBig lg:pt-big lg:pb-[250px]">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-0">
+                <div class="md:pb-mobileMed lg:pb-med order-2 sm:order-1 mr-6">
+                    <h2 class="text-2xl lg:text-4xl mb-0 sm:mb-6 lg:mb-10 uppercase">Лёгкий старт<br> в мир доходов</h2>
+                    <p class="text-xs lg:text-base w-full md:w-2/3">Майнинг — это процесс создания новых блоков в блокчейне и подтверждения транзакций. Он требует значительных вычислительных ресурсов и энергии, но в результате вы получаете вознаграждение в виде криптовалюты. Узнайте, как начать свой путь в мире криптовалют и стать частью этой захватывающей технологии!</p>
+                </div> 
+                <div class="order-1 sm:order-2">
+                    <img class="object-cover h-auto w-full xl:-mt-64" src="./img/a_realistic_monet_2.png" alt="">
+                </div>  
+            </div>       
+            </div>
+        </section> 
+
+
+
+        <section>
+            <div class="bg-cover bg-center w-full lg:h-[500px] xl:h-[650px]" style="background-image: url('./img/fon.png');">
+                <div class="container mx-auto px-4 relative py-mobileBig lg:pt-big">
+                    <div class="lg:absolute lg:-top-32 px-4">
+                        <img class="w-full h-auto" src="./img/7infograph_table.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black">
+            <div class="container mx-auto px-4 py-mobileBig lg:py-big">
+                <div class="grid grid-cols-3 md:grid-cols-6 space-y-6 justify-between items-end">
+
+                    <div class="flex flex-col gap-2 lg:gap-6 items-center">
+                        <img class="h-10 lg:h-32 w-auto" src="./img/nominals/Bitcoin 2.svg" alt="">
+                        <p class="text-xs lg:text-base">Bitcoin</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2 lg:gap-6 items-center">
+                        <img class="h-10 lg:h-32 w-auto" src="./img/nominals/cardano-logo-icon-original 1.svg" alt="">
+                        <p class="text-xs lg:text-base">Cardano</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2 lg:gap-6 items-center">
+                        <img class="h-10 lg:h-32 w-auto" src="./img/nominals/ethereum-icon-lg 1.svg" alt="">
+                        <p class="text-xs lg:text-base">Ethereum</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2 lg:gap-6 items-center">
+                        <img class="h-10 lg:h-32 w-auto" src="./img/nominals/litecoin-logo-icon-original 1.svg" alt="">
+                        <p class="text-xs lg:text-base">Litecoin</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2 lg:gap-6 items-center">
+                        <img class="h-10 lg:h-32 w-auto" src="./img/nominals/stellar-icon-original 1.svg" alt="">
+                        <p class="text-xs lg:text-base">Stellar</p>
+                    </div>
+
+                    <div class="flex flex-col gap-2 lg:gap-6 items-center">
+                        <img class="h-10 lg:h-32 w-auto" src="./img/nominals/tether-logo-icon-original 1.svg" alt="">
+                        <p class="text-xs lg:text-base">Tether</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="contacts" class="bg-bgDark">
+            <div class="container mx-auto px-4 py-mobileBig lg:py-big">
+                <div class="text-white flex flex-col gap-6 items-center lg:pb-16">
+                    <p class="text-xs md:text-base font-bold text-center w-full lg:w-3/4">Не упустите шанс стать частью растущего мира криптовалют. Зарегистрируйтесь сегодня и получите бонус на первый депозит! Вложите свои средства с уверенностью и начните зарабатывать на майнинге уже сейчас!</p>
+                    <p class="text-xs md:text-base font-bold text-center">Свяжитесь с нашими менеджерами, и они ответят на все ваши вопросы</p>
+                    <p class="text-2xl lg:text-4xl mb-6 lg:mb-10 uppercase font-extrabold">+7 981 897-89-89</p>
+                </div>
+            </div>    
+        </section>    
+
+
+        <section id="rekvizitu">
+            <div class="relative bg-cover bg-center w-full lg:h-[700px] xl:h-[950px] pb-6 lg:pb-10" style="background-image: url('./img/footer.png');">
+                <div class="container mx-auto px-4 pb-mobileBig lg:pb-big relative">
+                    <div class="bg-black text-white lg:absolute lg:-top-32 px-4 text-center w-full p-big">
+                       <h2 class="text-2xl lg:text-4xl uppercase ">реквизиты для пополнения</h2>
+
+                       
+                       <div class="container mx-auto px-4 pt-6 lg:pt-med pb-6 lg:pb-mobileMed">
+                        <div class="block lg:hidden">
+                            <div class="border border-gray-300 rounded-lg p-4 mb-4">
+                                <h2 class="font-bold">Получатель: Василий Василий Василий</h2>
+                                <p class="text-sm"><strong>Номер счета:</strong> 000001434153454000445645</p>
+                                <p class="text-sm"><strong>Банк:</strong> Тинькоф</p>
+                                <p class="text-sm"><strong>БИК:</strong> 445645</p>
+                                <p class="text-sm"><strong>Корреспондентский счёт:</strong> 44564500000000015453</p>
+                                <p class="text-sm"><strong>Назначение платежа:</strong> «Покупка криптовалюты»</p>
+                            </div>
+                        </div>
+                    
+                        <table class="min-w-2/3 text-xs lg:text-sm hidden lg:table mx-auto">
+                            <thead>
+                                <tr>
+                                    <th class="border-b border-r border-white pr-8 py-4 text-left uppercase">Получатель</th>
+                                    <th class="border-b border-white px-4 py-2 text-left">Василий Василий Василий</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border-b border-r border-white pr-8 py-4 text-left uppercase">Номер счета</td>
+                                    <td class="border-b border-white px-4 py-2 text-left">000001434153454000445645</td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b border-r border-white pr-8 py-4 text-left uppercase">Банк</td>
+                                    <td class="border-b border-white px-4 py-2 text-left">Тинькоф</td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b border-r border-white pr-8 py-4 text-left uppercase">БИК</td>
+                                    <td class="border-b border-white px-4 py-2 text-left">445645</td>
+                                </tr>
+                                <tr>
+                                    <td class="border-b border-r border-white pr-8 py-4 text-left uppercase">Корреспондентский счёт</td>
+                                    <td class="border-b border-white px-4 py-2 text-left">44564500000000015453</td>
+                                </tr>
+                                <tr>
+                                    <td class="border-r border-white pr-8 py-4 text-left uppercase">Назначение платежа</td>
+                                    <td class="border-white px-4 py-2 text-left">«Покупка криптовалюты»</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+
+
+                        <p class="text-xs lg:text-sm">Пожалуйста, укажите ваше имя или номер заказа<br> в назначении платежа для быстрой обработки.</p>
+                    
+                    
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+            <p class="-mt-10 relative text-center text-white text-xs lg:text-sm">© 2025 ИП Василий. Все права защищены.</p> 
+        </section>
     </main>
 
 

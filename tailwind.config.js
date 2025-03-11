@@ -91,6 +91,8 @@ module.exports = {
       padding: {
         big: '150px',
         mobileBig: '100px',
+        med: '90px',
+        mobileMed: '50px',
       },
      
       screens: {
